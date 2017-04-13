@@ -2,7 +2,15 @@
 
 use yii\grid\GridView;
 
+?>
+
+<h1> <?=$ladder->title;?></h1>
+
+<?php
+
 echo GridView::widget([
+    'summary' => '',
+    'options' => ['class' => 'table-responsive'],
     'dataProvider' => $dataProvider,
     'columns' => [
         'player.nickname',

@@ -64,4 +64,9 @@ class Player extends \yii\db\ActiveRecord
         return $this->hasMany(Game::className(), ['id' => 'game_id'])
             ->via('gamePlayers');
     }
+
+    public function getLadderStats()
+    {
+        return $this->hasMany(LadderStats::className(), ['player_id' => 'id']);
+    }
 }

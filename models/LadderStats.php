@@ -19,6 +19,8 @@ class LadderStats extends \yii\db\ActiveRecord
 {
     public $apm;
     public $winPercent;
+
+    public $ladderTitle;
     /**
      * @inheritdoc
      */

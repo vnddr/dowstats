@@ -43,6 +43,8 @@ $config = [
             'showScriptName' => false,
             'rules' => [
                 'ladder/<id:\w+>/' => 'ladder/ladder',
+                'player/<id:\w+>/' => 'player/player',
+                'replays/<id:\w+>/' => 'replay/replays',
                 '<controller>/<action>' => '<controller>/<action>',
                 '<controller>/<action>/<id:\w+>/' => '<controller>/<action>',
             ],

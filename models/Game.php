@@ -16,6 +16,7 @@ use Yii;
  * @property integer $type
  * @property string $ipreal
  * @property integer $confirmed
+ * @property string date
  */
 class Game extends \yii\db\ActiveRecord
 {
@@ -34,7 +35,7 @@ class Game extends \yii\db\ActiveRecord
     {
         return [
             [['game_time', 'downloads', 'type', 'confirmed'], 'integer'],
-            [['map'], 'string', 'max' => 50],
+            [['map', 'date'], 'string', 'max' => 50],
             [['replay_link'], 'string', 'max' => 200],
             [['game_mod'], 'string', 'max' => 20],
             [['ipreal'], 'string', 'max' => 30],
@@ -56,6 +57,7 @@ class Game extends \yii\db\ActiveRecord
             'type' => 'Type',
             'ipreal' => 'Ipreal',
             'confirmed' => 'Confirmed',
+            'date' => 'Date',
         ];
     }
 
@@ -72,6 +74,11 @@ class Game extends \yii\db\ActiveRecord
     {
         return $this->hasMany(Player::className(), ['id' => 'player_id'])
             ->via('gamePlayers');
+    }
+
+    public function getMapmodel()
+    {
+        return $this->hasOne(Map::className(), ['gametitle' => 'map']);
     }
 
 

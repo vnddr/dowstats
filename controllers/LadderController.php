@@ -63,6 +63,7 @@ class LadderController extends Controller
         $dataProvider->setSort($sort);
 
         return $this->render('ladder', [
+            'ladder' => $ladder,
             'dataProvider' => $dataProvider
         ]);
     }

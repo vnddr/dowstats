@@ -43,4 +43,16 @@ class Race extends \yii\db\ActiveRecord
             'icon' => 'Icon',
         ];
     }
+
+    public static $icons = [
+        1 => '/img/sm.png',
+        2 => '/img/eldar.png',
+        3 => '/img/orks.png',
+        4 => '/img/csm.png',
+        5 => '/img/ig.png',
+        6 => '/img/necr.png',
+        7 => '/img/tau.png',
+        8 => '/img/sob.png',
+        9 => '/img/de.png'
+    ];
 }

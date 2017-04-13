@@ -1,0 +1,98 @@
+.player {
+    display: table-row;
+    padding-bottom: 20px;
+}
+
+.player-tabs {
+    padding-top: 20px;
+}
+
+.player__avatar {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+.player__info {
+    /*display: table-cell;*/
+    vertical-align: top;
+    padding-left: 40px;
+    padding-top: 10px;
+}
+
+.player__info__nickname {
+    font-size: 36px;
+    font-weight: 500;
+    /*font: 400 39px/1 suisse,arial,sans-serif;*/
+    padding-bottom: 10px;
+}
+
+.player__info__other {
+    padding-top: 5px;
+}
+
+.player__chart {
+    height: 350px;
+    /*width: 500px;*/
+}
+
+.map {
+    border: 1px solid #cecece;
+    border-radius: 4px;
+}
+
+.map__picture {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+.map__playerpack {
+    margin-top: 10px;
+    /*border: 1px solid #cecece;*/
+    /*border-radius: 4px;*/
+    /*height: 100%;*/
+    /*vertical-align: center;*/
+}
+
+.map__playerpack__winner {
+    border-right: 10px solid #ccffcc;
+    /*border-color: ;*/
+}
+
+.map__playerpack__loser {
+    background-color: #ce8483;
+}
+
+.map__sidebar__text {
+    /*padding-top: 10px;*/
+    padding-bottom: 10px;
+}
+
+.map__sidebar__toptext {
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+
+
+.text-centered {
+    text-align: center;
+}
+
+.table td.red {
+    color: #ce0000;
+}
+
+.table td.green {
+    color: #13d128;
+}
+
+img.playericon {
+    margin-right: 10px;
+    width: 40px;
+    height: 40px;
+}
+
