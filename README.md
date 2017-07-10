@@ -35,19 +35,32 @@ CONFIGURATION
 
 Database settings and other personal data are stored in .env file. Copy the .env.template file, rename it in .env and fill in your database settings
 
+
 API
 -------------
 ### Запрос на добавление реплея:
 GET `/connect`
-Параметры запроса:
+
+#### Параметры запроса:
+
 `p1`, `p2`,.. `p8` - ???? [string]
+
 ```apm``` - показатель APM отправившего реплей игрока. [float]
+
 `r1`, `r2`... - ?
+
 `w1`, `w2`... - ?
+
 `type` - ?
+
 `map` - название карты. [string]
+
 `gtime` - длительность игры в секундах. [int]
+
 `sid` - Steam ID отправителя реплея. [numeric string]
+
 `mod` - ? [string]
+
 `winby` - режим игры [string enum]
+
 `key` - ? [string]
